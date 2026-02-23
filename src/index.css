@@ -4,11 +4,17 @@
 @theme {
   --font-serif: "Cormorant Garamond", serif;
   --font-sans: "Inter", sans-serif;
+
+  /* Brand Colors - Kosmetik Meiser */
+  --color-primary: #B88B8B;
+  --color-dark: #2D2D2D;
+  --color-light: #FAF8F7;
+  --color-light-alt: #F5F0EE;
 }
 
 @layer base {
   body {
-    @apply bg-[#FAF8F7] text-[#2D2D2D] font-sans antialiased;
+    @apply bg-light text-dark font-sans antialiased;
   }
 }
 
@@ -27,7 +33,7 @@
 
 /* Focus visible styles for keyboard navigation */
 :focus-visible {
-  outline: 2px solid #B88B8B;
+  outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
 

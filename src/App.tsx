@@ -41,7 +41,7 @@ const iconMap = {
 
 const TopBar = () => {
   return (
-    <div className="bg-[#1A1A1A] text-white/70 py-2 px-6 hidden md:block border-b border-white/5">
+    <div className="bg-dark text-white/70 py-2 px-6 hidden md:block border-b border-white/5">
       <div className="max-w-7xl mx-auto flex justify-between items-center text-[10px] uppercase tracking-[0.2em] font-medium">
         <div className="flex gap-6">
           <a href={config.contact.phoneLink} className="flex items-center gap-2 hover:text-white transition-colors">
@@ -106,13 +106,13 @@ const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
-              className={`text-[11px] uppercase tracking-widest hover:opacity-60 transition-opacity duration-200 font-medium cursor-pointer focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2 rounded px-1`}
+              className="text-[11px] uppercase tracking-widest hover:opacity-60 transition-opacity duration-200 font-medium cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded px-1"
             >
               {link.name}
             </a>
           ))}
           <button
-            className={`bg-[${config.colors.dark}] text-white px-6 py-2.5 rounded-full text-[11px] uppercase tracking-widest hover:bg-opacity-80 transition-colors duration-200 font-bold cursor-pointer focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2`}
+            className="bg-dark text-white px-6 py-2.5 rounded-full text-[11px] uppercase tracking-widest hover:bg-opacity-80 transition-colors duration-200 font-bold cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
             aria-label="Termin buchen"
           >
             Jetzt Termin Buchen
@@ -121,7 +121,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Toggle */}
         <button
-          className={`md:hidden p-2 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2 rounded`}
+          className="md:hidden p-2 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label={isMobileMenuOpen ? "Menü schließen" : "Menü öffnen"}
           aria-expanded={isMobileMenuOpen}
@@ -151,14 +151,14 @@ const Navbar = () => {
             ))}
             <div className="flex flex-col gap-4 mt-4">
               <button
-                className={`bg-[${config.colors.dark}] text-white w-full py-4 rounded-xl text-sm uppercase tracking-widest font-bold cursor-pointer hover:bg-opacity-80 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2`}
+                className="bg-dark text-white w-full py-4 rounded-xl text-sm uppercase tracking-widest font-bold cursor-pointer hover:bg-opacity-80 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                 aria-label="Termin buchen"
               >
                 Jetzt Termin Buchen
               </button>
               <a
                 href={config.contact.phoneLink}
-                className={`flex items-center justify-center gap-2 py-4 border border-black/10 rounded-xl text-sm uppercase tracking-widest cursor-pointer hover:bg-black/5 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2`}
+                className="flex items-center justify-center gap-2 py-4 border border-black/10 rounded-xl text-sm uppercase tracking-widest cursor-pointer hover:bg-black/5 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                 aria-label="Telefonisch anrufen"
               >
                 <Phone size={16} aria-hidden="true" /> Anrufen
@@ -222,7 +222,7 @@ const Hero = () => {
           className="flex flex-col md:flex-row items-center justify-center gap-4"
         >
           <button
-            className={`bg-white text-black px-10 py-5 rounded-full text-xs uppercase tracking-widest font-bold hover:bg-[${config.colors.primary}] hover:text-white transition-colors duration-300 shadow-xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-transparent`}
+            className="bg-white text-black px-10 py-5 rounded-full text-xs uppercase tracking-widest font-bold hover:bg-primary hover:text-white transition-colors duration-300 shadow-xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-transparent"
             aria-label="Termin buchen"
           >
             Kostenlos Termin sichern
@@ -245,7 +245,7 @@ const Hero = () => {
         >
           <div className="flex">
             {[1, 2, 3, 4, 5].map((i) => (
-              <Star key={i} size={16} className={`fill-[${config.colors.primary}] text-[${config.colors.primary}]`} aria-hidden="true" />
+              <Star key={i} size={16} className="fill-primary text-primary" aria-hidden="true" />
             ))}
           </div>
           <span className="font-medium">{config.reviews.rating}</span>
@@ -257,11 +257,11 @@ const Hero = () => {
       <div className="absolute bottom-12 left-6 md:left-12 z-10 hidden md:block">
         <div className="flex items-center gap-4 text-white/60 text-[10px] uppercase tracking-widest">
           <div className="flex items-center gap-2">
-            <ShieldCheck size={14} className={`text-[${config.colors.primary}]`} aria-hidden="true" /> Staatlich Anerkannt
+            <ShieldCheck size={14} className="text-primary" aria-hidden="true" /> Staatlich Anerkannt
           </div>
           <div className="w-1 h-1 rounded-full bg-white/20" aria-hidden="true"></div>
           <div className="flex items-center gap-2">
-            <Award size={14} className={`text-[${config.colors.primary}]`} aria-hidden="true" /> {config.business.yearsExperience}+ Jahre Erfahrung
+            <Award size={14} className="text-primary" aria-hidden="true" /> {config.business.yearsExperience}+ Jahre Erfahrung
           </div>
         </div>
       </div>
@@ -290,7 +290,7 @@ const TrustBadges = () => {
               transition={{ delay: i * 0.1 }}
               className="text-center"
             >
-              <div className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[${config.colors.light}] text-[${config.colors.primary}] mb-4`}>
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-light text-primary mb-4">
                 <stat.icon size={24} aria-hidden="true" />
               </div>
               <div className="font-serif text-4xl md:text-5xl mb-2">{stat.number}</div>
@@ -317,7 +317,7 @@ const StickyActions = () => {
         <span className="font-bold text-sm uppercase tracking-wider">WhatsApp</span>
       </a>
       <button
-        className={`flex-[1.5] bg-[${config.colors.dark}] text-white flex items-center justify-center gap-2 py-4 rounded-2xl shadow-2xl hover:bg-opacity-90 active:bg-opacity-80 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2 group`}
+        className="flex-[1.5] bg-dark text-white flex items-center justify-center gap-2 py-4 rounded-2xl shadow-2xl hover:bg-opacity-90 active:bg-opacity-80 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 group"
         aria-label="Termin online buchen"
       >
         <Calendar size={20} aria-hidden="true" />
@@ -332,7 +332,7 @@ const Services = () => {
     <section id="services" className="py-32 px-6 max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
         <div className="max-w-2xl">
-          <span className={`text-[${config.colors.primary}] uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block`}>Unsere Behandlungen</span>
+          <span className="text-primary uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block">Unsere Behandlungen</span>
           <h2 className="font-serif text-5xl md:text-7xl leading-tight">Schönheit, die <br /> <span className="italic">anhält.</span></h2>
         </div>
         <p className="text-black/50 max-w-sm leading-relaxed text-sm">
@@ -367,11 +367,11 @@ const Services = () => {
                 {s.price}
               </div>
             </div>
-            <h3 className={`font-serif text-2xl mb-3 group-hover:text-[${config.colors.primary}] transition-colors`}>{s.title}</h3>
+            <h3 className="font-serif text-2xl mb-3 group-hover:text-primary transition-colors">{s.title}</h3>
             <p className="text-sm text-black/60 leading-relaxed mb-4">{s.description}</p>
             <div className="flex flex-wrap gap-2">
               {s.benefits.map((benefit, j) => (
-                <span key={j} className={`inline-flex items-center gap-1.5 text-[10px] uppercase tracking-widest text-[${config.colors.primary}] font-bold bg-[${config.colors.primary}]/10 px-3 py-1.5 rounded-full`}>
+                <span key={j} className="inline-flex items-center gap-1.5 text-[10px] uppercase tracking-widest text-primary font-bold bg-primary/10 px-3 py-1.5 rounded-full">
                   <CheckCircle2 size={12} aria-hidden="true" /> {benefit}
                 </span>
               ))}
@@ -424,14 +424,14 @@ const Pricing = () => {
           ))}
         </div>
 
-        <div className={`mt-20 bg-[${config.colors.light}] rounded-3xl p-10 md:p-16 text-center`}>
+        <div className="mt-20 bg-light rounded-3xl p-10 md:p-16 text-center">
           <h3 className="font-serif text-3xl md:text-4xl mb-4">Ihr Wunschtermin wartet</h3>
           <p className="text-black/50 max-w-lg mx-auto mb-8 text-sm">
             Buchen Sie jetzt online – schnell, einfach und verbindlich. Oder schreiben Sie uns direkt über WhatsApp.
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
             <button
-              className={`bg-[${config.colors.dark}] text-white px-10 py-5 rounded-full text-xs uppercase tracking-widest font-bold shadow-xl hover:bg-opacity-90 transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2`}
+              className="bg-dark text-white px-10 py-5 rounded-full text-xs uppercase tracking-widest font-bold shadow-xl hover:bg-opacity-90 transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
               aria-label="Online Termin buchen"
             >
               Online Termin buchen
@@ -459,11 +459,11 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
-    <section id="gallery" className={`py-32 bg-[${config.colors.lightAlt}]`}>
+    <section id="gallery" className="py-32 bg-light-alt">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <div>
-            <span className={`text-[${config.colors.primary}] uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block`}>Inspiration</span>
+            <span className="text-primary uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block">Inspiration</span>
             <h2 className="font-serif text-5xl md:text-7xl">Unsere Galerie</h2>
           </div>
           {config.social.instagram && (
@@ -471,7 +471,7 @@ const Gallery = () => {
               href={config.social.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className={`inline-flex items-center gap-3 text-xs uppercase tracking-[0.2em] font-bold border-b-2 border-[${config.colors.primary}] pb-2 hover:opacity-60 transition-opacity duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2 rounded`}
+              className="inline-flex items-center gap-3 text-xs uppercase tracking-[0.2em] font-bold border-b-2 border-primary pb-2 hover:opacity-60 transition-opacity duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
               aria-label="Mehr Bilder auf Instagram ansehen (öffnet in neuem Tab)"
             >
               Mehr auf Instagram <Instagram size={18} aria-hidden="true" />
@@ -487,7 +487,7 @@ const Gallery = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: (i % 4) * 0.1 }}
-              className={`aspect-square rounded-2xl overflow-hidden cursor-pointer group relative focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2`}
+              className="aspect-square rounded-2xl overflow-hidden cursor-pointer group relative focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
               onClick={() => setSelectedImage(img.url)}
               aria-label={`Galeriebild ${i + 1} vergrößern`}
               role="listitem"
@@ -558,7 +558,7 @@ const AboutSection = () => {
                 loading="lazy"
               />
             </div>
-            <div className={`absolute -bottom-8 -right-8 bg-[${config.colors.primary}] text-white p-8 rounded-[2rem] shadow-xl hidden xl:block`}>
+            <div className="absolute -bottom-8 -right-8 bg-primary text-white p-8 rounded-[2rem] shadow-xl hidden xl:block">
               <div className="text-3xl font-serif mb-1">{config.business.foundingYear}</div>
               <div className="text-[10px] uppercase tracking-[0.2em] font-bold">Gegründet mit Leidenschaft</div>
             </div>
@@ -566,7 +566,7 @@ const AboutSection = () => {
 
           <div className="space-y-8">
             <div>
-              <span className={`text-[${config.colors.primary}] uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block`}>Über uns</span>
+              <span className="text-primary uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block">Über uns</span>
               <h2 className="font-serif text-5xl md:text-6xl mb-8">Hallo, ich bin <br /><span className="italic">{config.owner.name}.</span></h2>
             </div>
 
@@ -580,8 +580,8 @@ const AboutSection = () => {
               {config.owner.certifications.map((cert, i) => {
                 const IconComponent = iconMap[cert.icon as keyof typeof iconMap] || CheckCircle2;
                 return (
-                  <div key={i} className={`flex items-center gap-3 bg-[${config.colors.light}] px-5 py-3 rounded-2xl`}>
-                    <IconComponent size={18} className={`text-[${config.colors.primary}]`} aria-hidden="true" />
+                  <div key={i} className="flex items-center gap-3 bg-light px-5 py-3 rounded-2xl">
+                    <IconComponent size={18} className="text-primary" aria-hidden="true" />
                     <span className="text-xs font-bold uppercase tracking-widest">{cert.label}</span>
                   </div>
                 );
@@ -590,7 +590,7 @@ const AboutSection = () => {
 
             <div className="pt-4">
               <button
-                className={`bg-[${config.colors.dark}] text-white px-10 py-5 rounded-full text-xs uppercase tracking-widest font-bold shadow-xl hover:bg-opacity-90 transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2`}
+                className="bg-dark text-white px-10 py-5 rounded-full text-xs uppercase tracking-widest font-bold shadow-xl hover:bg-opacity-90 transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                 aria-label="Jetzt kennenlernen und Termin buchen"
               >
                 Lernen Sie mich kennen
@@ -605,15 +605,15 @@ const AboutSection = () => {
 
 const Testimonials = () => {
   return (
-    <section className={`py-32 bg-[${config.colors.dark}]`}>
+    <section className="py-32 bg-dark">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
-          <span className={`text-[${config.colors.primary}] uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block`}>Kundenstimmen</span>
+          <span className="text-primary uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block">Kundenstimmen</span>
           <h2 className="font-serif text-5xl md:text-7xl text-white mb-6">Was unsere <br /><span className="italic">Kundinnen sagen</span></h2>
           <div className="flex items-center justify-center gap-2 text-white/70">
             <div className="flex">
               {[1, 2, 3, 4, 5].map((i) => (
-                <Star key={i} size={20} className={`fill-[${config.colors.primary}] text-[${config.colors.primary}]`} aria-hidden="true" />
+                <Star key={i} size={20} className="fill-primary text-primary" aria-hidden="true" />
               ))}
             </div>
             <span className="font-medium text-white ml-2">{config.reviews.rating}</span>
@@ -634,7 +634,7 @@ const Testimonials = () => {
             >
               <div className="flex items-center gap-1 mb-6">
                 {[...Array(review.rating)].map((_, j) => (
-                  <Star key={j} size={16} className={`fill-[${config.colors.primary}] text-[${config.colors.primary}]`} aria-hidden="true" />
+                  <Star key={j} size={16} className="fill-primary text-primary" aria-hidden="true" />
                 ))}
               </div>
               <p className="text-white/80 leading-relaxed mb-8 text-lg italic">"{review.text}"</p>
@@ -654,7 +654,7 @@ const Testimonials = () => {
             href={config.reviews.googleReviewLink}
             target="_blank"
             rel="noopener noreferrer"
-            className={`inline-flex items-center gap-3 text-white/60 hover:text-white text-xs uppercase tracking-[0.2em] font-bold transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2 focus:ring-offset-[${config.colors.dark}] rounded`}
+            className="inline-flex items-center gap-3 text-white/60 hover:text-white text-xs uppercase tracking-[0.2em] font-bold transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-dark rounded"
             aria-label="Alle Google Bewertungen ansehen (öffnet in neuem Tab)"
           >
             Alle Bewertungen auf Google ansehen <ExternalLink size={14} aria-hidden="true" />
@@ -679,7 +679,7 @@ const HygieneSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="space-y-10">
             <div>
-              <span className={`text-[${config.colors.primary}] uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block`}>Sicherheit & Qualität</span>
+              <span className="text-primary uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block">Sicherheit & Qualität</span>
               <h2 className="font-serif text-5xl md:text-7xl mb-8">{config.hygiene.headline}</h2>
               <p className="text-black/60 leading-relaxed text-lg">{config.hygiene.description}</p>
             </div>
@@ -689,7 +689,7 @@ const HygieneSection = () => {
                 const IconComponent = hygieneIcons[feature.icon as keyof typeof hygieneIcons] || CheckCircle2;
                 return (
                   <div key={i} className="space-y-4">
-                    <div className={`w-12 h-12 rounded-2xl bg-[${config.colors.light}] flex items-center justify-center text-[${config.colors.primary}]`}>
+                    <div className="w-12 h-12 rounded-2xl bg-light flex items-center justify-center text-primary">
                       <IconComponent size={24} />
                     </div>
                     <h4 className="font-bold text-sm uppercase tracking-widest">{feature.title}</h4>
@@ -710,7 +710,7 @@ const HygieneSection = () => {
                 loading="lazy"
               />
             </div>
-            <div className={`absolute -top-10 -left-10 bg-[${config.colors.primary}] text-white p-10 rounded-[2rem] shadow-xl hidden xl:block`}>
+            <div className="absolute -top-10 -left-10 bg-primary text-white p-10 rounded-[2rem] shadow-xl hidden xl:block">
               <div className="text-4xl font-serif mb-2">100%</div>
               <div className="text-[10px] uppercase tracking-[0.2em] font-bold">Hygiene Garantie</div>
             </div>
@@ -724,17 +724,17 @@ const HygieneSection = () => {
 const ContactSection = () => {
   return (
     <section id="contact" className="py-32 px-6 max-w-7xl mx-auto">
-      <div className={`bg-[${config.colors.dark}] rounded-[4rem] overflow-hidden grid grid-cols-1 lg:grid-cols-2 shadow-2xl`}>
+      <div className="bg-dark rounded-[4rem] overflow-hidden grid grid-cols-1 lg:grid-cols-2 shadow-2xl">
         <div className="p-12 md:p-20 space-y-12">
           <div>
-            <span className={`text-[${config.colors.primary}] uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block`}>Bereit für Ihren Wunschtermin?</span>
+            <span className="text-primary uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block">Bereit für Ihren Wunschtermin?</span>
             <h2 className="font-serif text-5xl md:text-7xl text-white mb-8">Melden Sie sich <br /> <span className="italic">einfach.</span></h2>
             <p className="text-white/40 leading-relaxed">Keine langen Wartezeiten, keine Umwege. Schreiben Sie uns direkt über WhatsApp oder rufen Sie an – wir antworten schnell und verbindlich.</p>
           </div>
 
           <div className="space-y-8">
             <a href={config.contact.phoneLink} className="flex items-center gap-6 group">
-              <div className={`w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center text-white group-hover:bg-[${config.colors.primary}] transition-all`}>
+              <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center text-white group-hover:bg-primary transition-all">
                 <Phone size={24} />
               </div>
               <div>
@@ -752,7 +752,7 @@ const ContactSection = () => {
               </div>
             </a>
             <a href={`mailto:${config.contact.email}`} className="flex items-center gap-6 group">
-              <div className={`w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center text-white group-hover:bg-[${config.colors.primary}] transition-all`}>
+              <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center text-white group-hover:bg-primary transition-all">
                 <Mail size={24} />
               </div>
               <div>
@@ -770,7 +770,7 @@ const ContactSection = () => {
             loading="lazy"
             title="Standort auf Google Maps"
           ></iframe>
-          <div className={`absolute inset-0 bg-gradient-to-r from-[${config.colors.dark}] via-transparent to-transparent pointer-events-none`}></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-dark via-transparent to-transparent pointer-events-none"></div>
         </div>
       </div>
     </section>
@@ -779,7 +779,7 @@ const ContactSection = () => {
 
 const Footer = () => {
   return (
-    <footer className={`bg-[${config.colors.light}] pt-32 pb-40 px-6 border-t border-black/5`}>
+    <footer className="bg-light pt-32 pb-40 px-6 border-t border-black/5">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
         <div className="space-y-8">
           <span className="font-serif text-3xl tracking-widest uppercase font-light">{config.business.name}</span>
@@ -790,7 +790,7 @@ const Footer = () => {
                 href={config.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`w-12 h-12 rounded-2xl border border-black/5 flex items-center justify-center hover:bg-[${config.colors.dark}] hover:text-white transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2`}
+                className="w-12 h-12 rounded-2xl border border-black/5 flex items-center justify-center hover:bg-dark hover:text-white transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                 aria-label="Folgen Sie uns auf Instagram"
               >
                 <Instagram size={20} aria-hidden="true" />
@@ -800,7 +800,7 @@ const Footer = () => {
               href={config.contact.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className={`w-12 h-12 rounded-2xl border border-black/5 flex items-center justify-center hover:bg-[${config.colors.dark}] hover:text-white transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2`}
+              className="w-12 h-12 rounded-2xl border border-black/5 flex items-center justify-center hover:bg-dark hover:text-white transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
               aria-label="Kontaktieren Sie uns über WhatsApp"
             >
               <MessageCircle size={20} aria-hidden="true" />
@@ -820,10 +820,10 @@ const Footer = () => {
         <div className="space-y-8">
           <h4 className="text-[10px] uppercase tracking-[0.3em] font-bold text-black/40">Quick Links</h4>
           <ul className="space-y-4 text-sm font-medium">
-            <li><a href="#services" className={`hover:text-[${config.colors.primary}] transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2 rounded`}>Services</a></li>
-            <li><a href="#pricing" className={`hover:text-[${config.colors.primary}] transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2 rounded`}>Preisliste</a></li>
-            <li><a href="#gallery" className={`hover:text-[${config.colors.primary}] transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2 rounded`}>Galerie</a></li>
-            <li><a href="#contact" className={`hover:text-[${config.colors.primary}] transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2 rounded`}>Termin Buchen</a></li>
+            <li><a href="#services" className="hover:text-primary transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded">Services</a></li>
+            <li><a href="#pricing" className="hover:text-primary transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded">Preisliste</a></li>
+            <li><a href="#gallery" className="hover:text-primary transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded">Galerie</a></li>
+            <li><a href="#contact" className="hover:text-primary transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded">Termin Buchen</a></li>
           </ul>
         </div>
 
@@ -837,7 +837,7 @@ const Footer = () => {
             href={config.contact.googleMapsLink}
             target="_blank"
             rel="noopener noreferrer"
-            className={`inline-flex items-center gap-2 text-[10px] uppercase tracking-widest font-bold border-b border-black pb-1 cursor-pointer hover:opacity-70 transition-opacity duration-200 focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2 rounded`}
+            className="inline-flex items-center gap-2 text-[10px] uppercase tracking-widest font-bold border-b border-black pb-1 cursor-pointer hover:opacity-70 transition-opacity duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
             aria-label="Standort in Google Maps öffnen"
           >
             Google Maps <ExternalLink size={12} aria-hidden="true" />
@@ -847,9 +847,9 @@ const Footer = () => {
 
       <div className="max-w-7xl mx-auto pt-16 mt-16 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] uppercase tracking-widest text-black/30 font-bold">
         <nav className="flex gap-8" aria-label="Rechtliche Links">
-          <a href="#" className={`hover:text-black transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2 rounded`}>Impressum</a>
-          <a href="#" className={`hover:text-black transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2 rounded`}>Datenschutz</a>
-          <a href="#" className={`hover:text-black transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[${config.colors.primary}] focus:ring-offset-2 rounded`}>AGB</a>
+          <a href="#" className="hover:text-black transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded">Impressum</a>
+          <a href="#" className="hover:text-black transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded">Datenschutz</a>
+          <a href="#" className="hover:text-black transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded">AGB</a>
         </nav>
         <span>© {new Date().getFullYear()} {config.business.name} Beauty & Nails.</span>
       </div>
@@ -859,11 +859,11 @@ const Footer = () => {
 
 export default function App() {
   return (
-    <div className={`min-h-screen selection:bg-[${config.colors.primary}] selection:text-white`}>
+    <div className="min-h-screen selection:bg-primary selection:text-white">
       {/* Skip Link for Accessibility */}
       <a
         href="#main-content"
-        className={`sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-[${config.colors.dark}] focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:outline-none`}
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-dark focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:outline-none"
       >
         Zum Hauptinhalt springen
       </a>
