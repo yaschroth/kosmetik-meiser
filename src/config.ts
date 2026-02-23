@@ -281,7 +281,7 @@ export const config = {
       { url: "/beauty/manik%C3%BCre%203.png", category: "Pflege" },
       { url: "/beauty/pedicure.webp", category: "Pflege" },
       { url: "/beauty/acne-after.png", category: "Ergebnisse" },
-      { url: "/beauty/beauty.png", category: "Studio" },
+      { url: "/beauty/klangschale.jpg", category: "Wellness" },
       { url: "/beauty/contact.png", category: "Studio" },
     ],
   },
