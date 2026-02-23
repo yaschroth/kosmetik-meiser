@@ -304,8 +304,24 @@ const TrustBadges = () => {
 };
 
 const StickyActions = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsVisible(window.scrollY > window.innerHeight * 0.8);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-3 w-[94%] max-w-lg md:bottom-8" role="group" aria-label="Schnellaktionen">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
+      className={`fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-3 w-[94%] max-w-lg md:bottom-8 ${!isVisible ? 'pointer-events-none' : ''}`}
+      role="group"
+      aria-label="Schnellaktionen"
+    >
       <a
         href={config.contact.whatsappLink}
         target="_blank"
@@ -323,7 +339,7 @@ const StickyActions = () => {
         <Calendar size={20} aria-hidden="true" />
         <span className="font-bold text-sm uppercase tracking-wider">Jetzt Termin Buchen</span>
       </button>
-    </div>
+    </motion.div>
   );
 };
 
