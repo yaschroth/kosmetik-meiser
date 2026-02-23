@@ -287,14 +287,14 @@ export const config = {
   },
 
   // ============================================
-  // COLORS (Theme) - Soft rose/mauve for cosmetics
+  // COLORS (Theme) - Sage blue-gray from logo
   // ============================================
   colors: {
-    primary: "#B88B8B", // Dusty rose
-    primaryRgb: "184, 139, 139",
-    dark: "#2D2D2D",
-    light: "#FAF8F7",
-    lightAlt: "#F5F0EE",
+    primary: "#7FA3A3", // Sage blue-gray
+    primaryRgb: "127, 163, 163",
+    dark: "#2D3A3A",
+    light: "#F5F8F8",
+    lightAlt: "#E8EEEE",
   },
 
   // ============================================

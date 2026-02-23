@@ -5,11 +5,11 @@
   --font-serif: "Cormorant Garamond", serif;
   --font-sans: "Inter", sans-serif;
 
-  /* Brand Colors - Kosmetik Meiser */
-  --color-primary: #B88B8B;
-  --color-dark: #2D2D2D;
-  --color-light: #FAF8F7;
-  --color-light-alt: #F5F0EE;
+  /* Brand Colors - Kosmetik Meiser (sage blue-gray from logo) */
+  --color-primary: #7FA3A3;
+  --color-dark: #2D3A3A;
+  --color-light: #F5F8F8;
+  --color-light-alt: #E8EEEE;
 }
 
 @layer base {
