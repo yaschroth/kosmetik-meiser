@@ -72,7 +72,7 @@ export const config = {
     bio: [
       "Seit über 30 Jahren widme ich mich mit Liebe und Leidenschaft der Hautpflege und Kosmetik. Als staatlich anerkannte Kosmetikerin mit 7 Jahren Erfahrung in einer dermatologischen Praxis ist es mir wichtig, dass Sie sich bei mir rundum wohlfühlen.",
       "In meinem Studio in Heilbronn-Sontheim biete ich Ihnen modernste apparative Behandlungsmethoden: von Microneedling über Radiofrequenz, Ultraschall und Cold Plasma bis hin zu Aquafacial. Jede Behandlung wird individuell auf Ihre Hautbedürfnisse abgestimmt.",
-      "Ob Pigmentstörungen, Akne, große Poren, Falten oder Narben – gemeinsam finden wir die optimale Lösung für Ihre Haut. Die richtige Heimpflege mit abgestimmten Produkten ist dabei essentiell für nachhaltige Ergebnisse.",
+      "Ob Pigmentstörungen, Akne, große Poren, Falten oder Narben: Gemeinsam finden wir die optimale Lösung für Ihre Haut. Die richtige Heimpflege mit abgestimmten Produkten ist dabei essentiell für nachhaltige Ergebnisse.",
     ],
     certifications: [
       { label: "Staatl. anerkannt", icon: "shield" },

@@ -213,7 +213,7 @@ const Hero = () => {
           transition={{ delay: 0.9 }}
           className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light"
         >
-          Über 30 Jahre Erfahrung in professioneller Hautpflege. Modernste apparative Kosmetik – individuell auf Ihre Haut abgestimmt.
+          Über 30 Jahre Erfahrung in professioneller Hautpflege. Modernste apparative Kosmetik, individuell auf Ihre Haut abgestimmt.
         </motion.p>
         <motion.div
           initial={{ opacity: 0 }}
@@ -336,7 +336,7 @@ const Services = () => {
           <h2 className="font-serif text-5xl md:text-7xl leading-tight">Hautpflege auf <br /> <span className="italic">höchstem Niveau.</span></h2>
         </div>
         <p className="text-black/50 max-w-sm leading-relaxed text-sm">
-          Modernste Technologien für sichtbare Ergebnisse. Ob Falten, Pigmentstörungen oder Akne – gemeinsam finden wir die optimale Lösung für Ihre Haut.
+          Modernste Technologien für sichtbare Ergebnisse. Ob Falten, Pigmentstörungen oder Akne: Gemeinsam finden wir die optimale Lösung für Ihre Haut.
         </p>
       </div>
 
@@ -427,7 +427,7 @@ const Pricing = () => {
         <div className="mt-20 bg-light rounded-3xl p-10 md:p-16 text-center">
           <h3 className="font-serif text-3xl md:text-4xl mb-4">Ihr Wunschtermin wartet</h3>
           <p className="text-black/50 max-w-lg mx-auto mb-8 text-sm">
-            Buchen Sie jetzt online – schnell, einfach und verbindlich. Oder schreiben Sie uns direkt über WhatsApp.
+            Buchen Sie jetzt online. Schnell, einfach und verbindlich. Oder schreiben Sie uns direkt über WhatsApp.
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
             <button
