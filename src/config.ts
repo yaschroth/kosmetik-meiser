@@ -8,10 +8,10 @@ export const config = {
   business: {
     name: "Kosmetik Meiser",
     tagline: "Ihr Kosmetikstudio in Heilbronn-Sontheim",
-    description: "Professionelle Kosmetik und Hautpflege von staatlich geprüfter Kosmetikerin. Moderne Behandlungen für Ihr Wohlbefinden.",
-    foundingYear: 2005,
-    yearsExperience: 20,
-    satisfiedClients: "1.500+",
+    description: "Professionelle Kosmetik und Hautpflege von staatlich anerkannter Kosmetikerin mit über 30 Jahren Erfahrung. Moderne apparative Behandlungen für Ihr Wohlbefinden.",
+    foundingYear: 1995,
+    yearsExperience: 30,
+    satisfiedClients: "2.000+",
   },
 
   // ============================================
@@ -29,8 +29,8 @@ export const config = {
       district: "Sontheim",
       zip: "74081",
     },
-    googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2614.8!2d9.22!3d49.13!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47982!2sStaufenbergstr.+71%2C+74081+Heilbronn!5e0!3m2!1sde!2sde!4v1700000000000!5m2!1sde!2sde",
-    googleMapsLink: "https://maps.google.com/?q=Staufenbergstr.+71+74081+Heilbronn",
+    googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2614.5!2d9.2165!3d49.1285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47982915e8888889%3A0x0!2sStaufenbergstra%C3%9Fe%2071%2C%2074081%20Heilbronn!5e0!3m2!1sde!2sde!4v1700000000000!5m2!1sde!2sde",
+    googleMapsLink: "https://www.google.com/maps/search/?api=1&query=Staufenbergstraße+71,+74081+Heilbronn-Sontheim",
   },
 
   // ============================================
@@ -46,10 +46,11 @@ export const config = {
   // OPENING HOURS
   // ============================================
   hours: {
-    weekdays: "Nach Vereinbarung",
-    saturday: "Nach Vereinbarung",
+    weekdays: "Termine nach Vereinbarung",
+    saturday: "Termine nach Vereinbarung",
     sunday: "Geschlossen",
-    display: "Mo-Do Beratung: 13-14 & 18-19 Uhr",
+    note: "Beratung & Verkauf: Mo-Do 13-14 Uhr, Di & Do 18-19 Uhr",
+    display: "Termine nach Vereinbarung",
   },
 
   // ============================================
@@ -69,14 +70,15 @@ export const config = {
     fullName: "Corinna Meiser",
     image: "/beauty/frau.jpg",
     bio: [
-      "Seit über 20 Jahren widme ich mich leidenschaftlich der Hautpflege und Kosmetik. Als staatlich geprüfte Kosmetikerin ist es mir wichtig, dass Sie sich bei mir rundum wohlfühlen.",
-      "In meinem Studio in Heilbronn-Sontheim biete ich Ihnen modernste Behandlungsmethoden: von Microneedling über Radiofrequenz bis hin zu Aquafacial. Jede Behandlung wird individuell auf Ihre Bedürfnisse abgestimmt.",
-      "Ich bilde mich regelmäßig weiter, um Ihnen stets die neuesten und effektivsten Behandlungen anbieten zu können. Ihr Vertrauen ist mein Antrieb.",
+      "Seit über 30 Jahren widme ich mich mit Liebe und Leidenschaft der Hautpflege und Kosmetik. Als staatlich anerkannte Kosmetikerin mit 7 Jahren Erfahrung in einer dermatologischen Praxis ist es mir wichtig, dass Sie sich bei mir rundum wohlfühlen.",
+      "In meinem Studio in Heilbronn-Sontheim biete ich Ihnen modernste apparative Behandlungsmethoden: von Microneedling über Radiofrequenz, Ultraschall und Cold Plasma bis hin zu Aquafacial. Jede Behandlung wird individuell auf Ihre Hautbedürfnisse abgestimmt.",
+      "Ob Pigmentstörungen, Akne, große Poren, Falten oder Narben – gemeinsam finden wir die optimale Lösung für Ihre Haut. Die richtige Heimpflege mit abgestimmten Produkten ist dabei essentiell für nachhaltige Ergebnisse.",
     ],
     certifications: [
-      { label: "Staatl. geprüft", icon: "shield" },
+      { label: "Staatl. anerkannt", icon: "shield" },
       { label: "NiSV zertifiziert", icon: "award" },
-      { label: "Apparative Kosmetik", icon: "check" },
+      { label: "30+ Jahre Erfahrung", icon: "star" },
+      { label: "7 Jahre Dermatologie", icon: "check" },
     ],
   },
 
