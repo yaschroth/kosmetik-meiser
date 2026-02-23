@@ -248,7 +248,7 @@ export const config = {
   // LOGO
   // ============================================
   logo: {
-    src: "/logo.png",
+    src: "",
     alt: "Kosmetik Meiser Logo",
   },
 };
