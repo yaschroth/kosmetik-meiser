@@ -263,7 +263,7 @@ export const config = {
   // IMAGES
   // ============================================
   images: {
-    hero: "/beauty/hero%20main.webp",
+    hero: "/beauty/face2.jpg",
     heroAlt: "Professionelle Kosmetikbehandlung im Studio",
     hygiene: "/beauty/behandlung%204.png",
     gallery: [
