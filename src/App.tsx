@@ -205,7 +205,7 @@ const Hero = () => {
           transition={{ delay: 0.7 }}
           className="text-white font-serif text-5xl md:text-8xl font-extralight leading-[1.1] mb-6"
         >
-          Nägel, die <br /> <span className="italic">begeistern.</span>
+          Haut, die <br /> <span className="italic">strahlt.</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -213,7 +213,7 @@ const Hero = () => {
           transition={{ delay: 0.9 }}
           className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light"
         >
-          Endlich ein Studio, das Ihre Wünsche versteht. Professionelle Maniküre & Pediküre mit Liebe zum Detail – ohne Wartezeit, ohne Kompromisse.
+          Über 30 Jahre Erfahrung in professioneller Hautpflege. Modernste apparative Kosmetik – individuell auf Ihre Haut abgestimmt.
         </motion.p>
         <motion.div
           initial={{ opacity: 0 }}
@@ -332,11 +332,11 @@ const Services = () => {
     <section id="services" className="py-32 px-6 max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
         <div className="max-w-2xl">
-          <span className="text-primary uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block">Unsere Behandlungen</span>
-          <h2 className="font-serif text-5xl md:text-7xl leading-tight">Schönheit, die <br /> <span className="italic">anhält.</span></h2>
+          <span className="text-primary uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block">Apparative Kosmetik</span>
+          <h2 className="font-serif text-5xl md:text-7xl leading-tight">Hautpflege auf <br /> <span className="italic">höchstem Niveau.</span></h2>
         </div>
         <p className="text-black/50 max-w-sm leading-relaxed text-sm">
-          Keine Massenabfertigung. Bei uns bekommen Sie die Zeit und Aufmerksamkeit, die Sie verdienen – für Ergebnisse, die Sie lieben werden.
+          Modernste Technologien für sichtbare Ergebnisse. Ob Falten, Pigmentstörungen oder Akne – gemeinsam finden wir die optimale Lösung für Ihre Haut.
         </p>
       </div>
 
@@ -463,8 +463,8 @@ const Gallery = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <div>
-            <span className="text-primary uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block">Inspiration</span>
-            <h2 className="font-serif text-5xl md:text-7xl">Unsere Galerie</h2>
+            <span className="text-primary uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block">Einblicke</span>
+            <h2 className="font-serif text-5xl md:text-7xl">Studio & Behandlungen</h2>
           </div>
           {config.social.instagram && (
             <a
@@ -727,9 +727,9 @@ const ContactSection = () => {
       <div className="bg-dark rounded-[4rem] overflow-hidden grid grid-cols-1 lg:grid-cols-2 shadow-2xl">
         <div className="p-12 md:p-20 space-y-12">
           <div>
-            <span className="text-primary uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block">Bereit für Ihren Wunschtermin?</span>
-            <h2 className="font-serif text-5xl md:text-7xl text-white mb-8">Melden Sie sich <br /> <span className="italic">einfach.</span></h2>
-            <p className="text-white/40 leading-relaxed">Keine langen Wartezeiten, keine Umwege. Schreiben Sie uns direkt über WhatsApp oder rufen Sie an – wir antworten schnell und verbindlich.</p>
+            <span className="text-primary uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block">Termin vereinbaren</span>
+            <h2 className="font-serif text-5xl md:text-7xl text-white mb-8">Ich freue mich <br /> <span className="italic">auf Sie.</span></h2>
+            <p className="text-white/40 leading-relaxed">Rufen Sie mich an oder schreiben Sie mir eine E-Mail. Gerne berate ich Sie persönlich zu Ihren Hautbedürfnissen und finde die passende Behandlung für Sie.</p>
           </div>
 
           <div className="space-y-8">
@@ -851,7 +851,7 @@ const Footer = () => {
           <a href="#" className="hover:text-black transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded">Datenschutz</a>
           <a href="#" className="hover:text-black transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded">AGB</a>
         </nav>
-        <span>© {new Date().getFullYear()} {config.business.name} Beauty & Nails.</span>
+        <span>© {new Date().getFullYear()} {config.business.name}. Alle Rechte vorbehalten.</span>
       </div>
     </footer>
   );
