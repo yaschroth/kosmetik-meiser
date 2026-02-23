@@ -203,6 +203,7 @@ export const config = {
         { name: "SQT Bio-Micro Needling Nourishing", price: "165€" },
         { name: "Fraktionierte Radiofrequenz Gesicht", price: "120€" },
         { name: "Fraktionierte Radiofrequenz Gesicht, Hals & Dekolleté", price: "150€" },
+        { name: "Fraktionierte Radiofrequenz Oberarme (Zusatz)", price: "+25€" },
         { name: "Needling RF mit Vakuum Gesicht", price: "250€" },
         { name: "Needling RF mit Vakuum Gesicht, Hals & Dekolleté", price: "350€" },
         { name: "Needling RF mit Vakuum Hals & Dekolleté", price: "150€" },
@@ -213,6 +214,9 @@ export const config = {
       items: [
         { name: "Lift-Plus Ultraschall", price: "110€" },
         { name: "Lift-Plus Ultraschall mit Massage", price: "140€" },
+        { name: "Lift-Plus Ultraschall Hals & Dekolleté (Zusatz)", price: "+20€" },
+        { name: "Lift-Plus Ultraschall Mimikfalten exklusiv (Zusatz)", price: "+15€" },
+        { name: "Lift-Plus Ultraschall Lippen exklusiv (Zusatz)", price: "+15€" },
         { name: "Neosonic Ultraschall Behandlung", price: "140€" },
         { name: "Skin OXYmizer", price: "120€" },
         { name: "Skin OXYmizer mit Massage", price: "150€" },
@@ -220,6 +224,7 @@ export const config = {
         { name: "Cold Plasma (Zusatz)", price: "+20€" },
         { name: "Mikrodermabrasion (Zusatz)", price: "+20€" },
         { name: "Neosonic Peeling (Zusatz)", price: "+20€" },
+        { name: "Aquafacial Peeling (Zusatz)", price: "+20€" },
       ],
     },
     {
