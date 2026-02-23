@@ -115,36 +115,64 @@ export const config = {
   ],
 
   // ============================================
-  // SERVICES
+  // SERVICES (Featured)
   // ============================================
   services: [
     {
       title: "Microneedling",
       description: "Natürliche Hautverjüngung durch feine Mikro-Nadeln. Stimuliert die Kollagenproduktion für straffere, frischere Haut.",
-      price: "ab 150€",
+      price: "auf Anfrage",
       image: "/beauty/behandlung%202.webp",
-      benefits: ["Kollagenboost", "Inkl. Vliesmaske"],
+      benefits: ["Kollagenboost", "Anti-Aging"],
     },
     {
-      title: "Radiofrequenz",
+      title: "Fraktionierte Radiofrequenz",
       description: "Hautstraffung ohne OP durch gezielte Wärme in den tiefen Hautschichten. Für ein sichtbar jüngeres Erscheinungsbild.",
-      price: "ab 120€",
+      price: "auf Anfrage",
       image: "/beauty/face.webp",
       benefits: ["Sofort-Effekt", "Schmerzfrei"],
     },
     {
-      title: "Gesichtsbehandlung",
-      description: "Klassische Kosmetik mit modernsten Methoden. Reinigung, Peeling und Pflege, abgestimmt auf Ihren Hauttyp.",
-      price: "ab 75€",
-      image: "/beauty/hero%20main.webp",
-      benefits: ["Hautanalyse inkl.", "60-90 Min."],
-    },
-    {
       title: "Aquafacial",
       description: "Tiefenreinigung mit Hydra-Technologie. Reinigt, peelt und pflegt die Haut in einer einzigen, wohltuenden Behandlung.",
-      price: "ab 95€",
+      price: "auf Anfrage",
       image: "/beauty/behandlung%203.png",
       benefits: ["Sofort-Glow", "Keine Ausfallzeit"],
+    },
+    {
+      title: "Cold Plasma",
+      description: "Innovative Plasmatherapie für Hautverjüngung und Hautstraffung. Modernste Technologie für sichtbare Ergebnisse.",
+      price: "auf Anfrage",
+      image: "/beauty/behandlung%204.png",
+      benefits: ["Innovativ", "Effektiv"],
+    },
+    {
+      title: "Lift-Plus Ultraschall",
+      description: "Professionelle Ultraschallbehandlung für tiefenwirksame Pflege. Wirkstoffe werden optimal in die Haut eingeschleust.",
+      price: "auf Anfrage",
+      image: "/beauty/hero%20main.webp",
+      benefits: ["Tiefenwirkung", "Lifting-Effekt"],
+    },
+    {
+      title: "SQT Bio-Micro Needling",
+      description: "Biologisches Microneedling mit natürlichen Wirkstoffen. Sanfte Alternative zum klassischen Needling.",
+      price: "auf Anfrage",
+      image: "/beauty/kopfmassage.png",
+      benefits: ["Natürlich", "Hautschonend"],
+    },
+    {
+      title: "Permanent Make-up",
+      description: "Professionelles Permanent Make-up für Augenbrauen, Lidstrich und Lippen. Natürliche Ergebnisse, die überzeugen.",
+      price: "auf Anfrage",
+      image: "/beauty/eyebrow-after.png",
+      benefits: ["Langanhaltend", "Natürlicher Look"],
+    },
+    {
+      title: "Faltenunterspritzung",
+      description: "Professionelle Faltenbehandlung mit Hyaluronsäure. Für ein frisches, jugendliches Aussehen ohne OP.",
+      price: "auf Anfrage",
+      image: "/beauty/beauty.png",
+      benefits: ["Sofort sichtbar", "Minimal-invasiv"],
     },
   ],
 
@@ -155,23 +183,42 @@ export const config = {
     {
       category: "Gesichtsbehandlungen",
       items: [
-        { name: "Klassische Gesichtsbehandlung", price: "75€" },
-        { name: "Microneedling", price: "150€" },
-        { name: "Fraktionierte Radiofrequenz", price: "120€" },
-        { name: "Aquafacial", price: "95€" },
-        { name: "Fruchtsäurebehandlung", price: "85€" },
-        { name: "Mikrodermabrasion", price: "80€" },
+        { name: "Klassische Gesichtsbehandlung", price: "auf Anfrage" },
+        { name: "Aquafacial", price: "auf Anfrage" },
+        { name: "Fruchtsäurebehandlung", price: "auf Anfrage" },
+        { name: "Mikrodermabrasion", price: "auf Anfrage" },
       ],
     },
     {
-      category: "Spezialbehandlungen",
+      category: "Apparative Kosmetik",
       items: [
+        { name: "Microneedling", price: "auf Anfrage" },
         { name: "SQT Bio-Micro Needling", price: "auf Anfrage" },
+        { name: "Fraktionierte Radiofrequenz", price: "auf Anfrage" },
         { name: "Needling RF mit Vakuum", price: "auf Anfrage" },
+        { name: "Lift-Plus Ultraschall", price: "auf Anfrage" },
+        { name: "Neosonic Ultraschall", price: "auf Anfrage" },
         { name: "Cold Plasma", price: "auf Anfrage" },
         { name: "Skin OXYmizer", price: "auf Anfrage" },
-        { name: "Permanent Make-up", price: "auf Anfrage" },
+      ],
+    },
+    {
+      category: "Augenbehandlungen",
+      items: [
+        { name: "Wimpernlifting", price: "auf Anfrage" },
+        { name: "Wimpernfärben", price: "auf Anfrage" },
+        { name: "Augenbrauenstyling", price: "auf Anfrage" },
+        { name: "Permanent Make-up Augenbrauen", price: "auf Anfrage" },
+        { name: "Permanent Make-up Lidstrich", price: "auf Anfrage" },
+      ],
+    },
+    {
+      category: "Weitere Behandlungen",
+      items: [
+        { name: "Enthaarung", price: "auf Anfrage" },
         { name: "Faltenunterspritzung", price: "auf Anfrage" },
+        { name: "Permanent Make-up Lippen", price: "auf Anfrage" },
+        { name: "Gutscheine", price: "individuell" },
       ],
     },
   ],
