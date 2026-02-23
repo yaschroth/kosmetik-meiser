@@ -166,7 +166,7 @@ export const config = {
       title: "Skin OXYmizer",
       description: "Aktiviert die natürliche Sauerstoffversorgung der Haut. Für mehr Vitalität, Ausstrahlung und Elastizität.",
       price: "ab 120€",
-      image: "/beauty/beauty.png",
+      image: "/beauty/contact.png",
       benefits: ["Sauerstoff-Boost", "Vibro-Massage"],
     },
     {
